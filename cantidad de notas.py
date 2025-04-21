@@ -15,7 +15,7 @@
 cant_alum=int(input("Ingrese cantidad de alumnos:"))
 
 for j in range (cant_alum):
-    print("Ingrese numero de notas:", j+1)
+    print("Ingrese numero de notas del alumno", j+1)
     cant_notas=int(input())
     suma=0
     for i in range(cant_notas):
@@ -25,9 +25,8 @@ for j in range (cant_alum):
 
     prom=suma/cant_notas
 
-    print("El promedio de notas es ", prom)
-
-if prom>4:
-    print("Aprobado")
-else:
-    print("Reprobado")
+    print("El promedio de notas del alumno", j+1, "es", prom)
+    if prom>4:
+        print("El alumno", j+1, "está aprobado")
+    else:
+        print("El alumno", j+1, "está reprobado")
